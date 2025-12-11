@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.onlinetest.controller.AddQuestionController" 
+          hgap="10" vgap="10" alignment="CENTER"
+          stylesheets="@css/style.css"
+          styleClass="dashboard-container">
+
+    <!-- Question -->
+    <Label text="Question:" GridPane.rowIndex="0" GridPane.columnIndex="0" styleClass="label"/>
+    <TextField fx:id="txtQuestion" GridPane.rowIndex="0" GridPane.columnIndex="1" styleClass="text-field"/>
+
+    <!-- Option A -->
+    <Label text="Option A:" GridPane.rowIndex="1" GridPane.columnIndex="0" styleClass="label"/>
+    <TextField fx:id="txtOptionA" GridPane.rowIndex="1" GridPane.columnIndex="1" styleClass="text-field"/>
+
+    <!-- Option B -->
+    <Label text="Option B:" GridPane.rowIndex="2" GridPane.columnIndex="0" styleClass="label"/>
+    <TextField fx:id="txtOptionB" GridPane.rowIndex="2" GridPane.columnIndex="1" styleClass="text-field"/>
+
+    <!-- Option C -->
+    <Label text="Option C:" GridPane.rowIndex="3" GridPane.columnIndex="0" styleClass="label"/>
+    <TextField fx:id="txtOptionC" GridPane.rowIndex="3" GridPane.columnIndex="1" styleClass="text-field"/>
+
+    <!-- Option D -->
+    <Label text="Option D:" GridPane.rowIndex="4" GridPane.columnIndex="0" styleClass="label"/>
+    <TextField fx:id="txtOptionD" GridPane.rowIndex="4" GridPane.columnIndex="1" styleClass="text-field"/>
+
+    <!-- Answer -->
+    <Label text="Answer:" GridPane.rowIndex="5" GridPane.columnIndex="0" styleClass="label"/>
+    <TextField fx:id="txtAnswer" GridPane.rowIndex="5" GridPane.columnIndex="1" styleClass="text-field"/>
+
+    <!-- Add Question Button -->
+    <Button text="Add Question" GridPane.rowIndex="6" GridPane.columnIndex="1" 
+            onAction="#handleAddQuestion" styleClass="button"/>
+    
+</GridPane>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="20" alignment="CENTER" xmlns:fx="http://javafx.com/fxml" 
+      fx:controller="com.onlinetest.controller.StudentDashboardController"
+      stylesheets="@css/style.css"
+      styleClass="dashboard-container">
+
+    <!-- Dashboard Title -->
+    <Label text="Student Dashboard" styleClass="label" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+
+    <!-- Buttons -->
+    <Button text="Take Test" onAction="#handleTakeTest" styleClass="button"/>
+    <Button text="Logout" onAction="#handleLogout" styleClass="button"/>
+
+</VBox>
